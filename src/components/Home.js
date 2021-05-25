@@ -6,6 +6,11 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import ReactDOM from "react-dom";
 import { Link } from 'react-router-dom'
 import Headimg from './images/header.jpg' 
+import Aboutimg from './images/About-home.jpg'
+import Resumeimg from './images/resume.png'
+import Projectsimg from './images/Projects.jpg'
+import Skillsimg from './images/skills.jpg'
+
 //const thing = require("./images/header.jpg")
 const Home = () => {
     return (
@@ -15,15 +20,15 @@ const Home = () => {
 <Row>
     <Col>        
         <a href='./About'>
-        <Image src={Headimg} rounded/>
-        About me
+        <Image src={Aboutimg} rounded fluid/>
+        <p>About me</p>
         </a>
     </Col>
 
     <Col> 
         <a href='./About'>
-        <Image src={Headimg} rounded/>
-        Resume        
+        <Image src={Resumeimg} rounded fluid/>
+        <p>Resume</p>        
         </a>
     </Col>
   </Row>  
@@ -32,14 +37,14 @@ const Home = () => {
 <Link href='./About' ></Link>    
     <Col> 
         <a href='./About'>
-        <Image src={Headimg} rounded/>
+        <Image src={Skillsimg} rounded fluid/>
         <p>Past Projects</p>        
         </a>
     </Col>
     <Col> 
     <a href='./About'>
-        <Image src={Headimg} rounded/>
-        About me
+        <Image src={Projectsimg} rounded fluid/>
+        <p>About me</p>
         </a>
     </Col>
   </Row>
