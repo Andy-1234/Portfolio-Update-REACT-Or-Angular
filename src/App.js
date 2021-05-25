@@ -1,6 +1,7 @@
 import {BrowserRouter as Router, Route} from 'react-router-dom'
-import background from "./images/header.jpg"
+import background from "./components/images/header.jpg"
 import "bootstrap/dist/css/bootstrap.min.css"
+import Home from "./components/Home"
 import About from './components/About'
 import Header from "./components/Header"
 import Container from 'react-bootstrap/Container'
@@ -17,23 +18,15 @@ function App() {
   return (
     <Router>
     <div className="App">
-      <Route path='./About' component={About} />        
-        <Header></Header>
-      <Route path='/' />
-<Container style={{textAlign:'center'}}>
-<Row>
-    <Col style={{textAlign:'center'}}>1 of 2</Col>
-    <Col>2 of 2</Col>
-  </Row>  
-  <Row>
-    <Col>
-    
-<Link to='./About' ></Link>    
-    </Col>
-    <Col>2 of 2</Col>
-  </Row>
+      <Route path='/' exact render={(prop)=> (
+        <>
+                <Header></Header>
+                <Home/>
 
-</Container>
+        </>
+      )} />
+      <Route path='/About' component={About} />        
+
 
     </div>
     </Router>
@@ -41,6 +34,10 @@ function App() {
 }
 
 export default App;
+
+
+
+
 /*
 
         <header>

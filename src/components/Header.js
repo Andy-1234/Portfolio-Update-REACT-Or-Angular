@@ -30,7 +30,7 @@ const Header = () => {
 </Jumbotron>
             <Nav>
   <Nav.Item>
-    <Nav.Link to="/" style={{color:'red'}}>Home</Nav.Link>
+    <Nav.Link to="/" style={{color:'red'}}> Home</Nav.Link>
   </Nav.Item>
   <Nav.Item>
     <Nav.Link href="./About" style={{color:'red'}}>About me</Nav.Link>
