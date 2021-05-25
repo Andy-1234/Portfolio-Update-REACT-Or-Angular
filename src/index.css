@@ -1,3 +1,7 @@
+html{
+  background-color: #333;
+}
+
 body {
   background-color: rgb(49, 49, 49);
   margin: 0;
@@ -46,3 +50,7 @@ nav{
 
   border: black 1px solid;
 }
+
+/*
+self created classes below
+*/

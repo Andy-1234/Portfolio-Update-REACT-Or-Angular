@@ -1,13 +1,48 @@
+import {BrowserRouter as Router, Route} from 'react-router-dom'
 import background from "./images/header.jpg"
-import button from "react-bootstrap/Button"
 import "bootstrap/dist/css/bootstrap.min.css"
-//https://www.creative-tim.com/blog/web-design/how-to-use-bootstrap-with-reactjs/
+import About from './components/About'
+import Header from "./components/Header"
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
+//just resources for self
+
+//import  //"react-bootstrap/container"
+//https://www.creative-tim.com/blog/web-design/how-to-use-bootstrap-with-reactjs/
 //https://www.pluralsight.com/guides/how-to-import-components-from-react-bootstrap
 //https://react-bootstrap.github.io/layout/grid/
 function App() {
   return (
-    <div classnameName="App">
+    <Router>
+    <div className="App">
+      <Route path='./About' component={About} />        
+        <Header></Header>
+      <Route path='/' />
+<Container style={{textAlign:'center'}}>
+<Row>
+    <Col style={{textAlign:'center'}}>1 of 2</Col>
+    <Col>2 of 2</Col>
+  </Row>  
+  <Row>
+    <Col>
+    
+<Link to='./About' ></Link>    
+    </Col>
+    <Col>2 of 2</Col>
+  </Row>
+
+</Container>
+
+    </div>
+    </Router>
+  );
+}
+
+export default App;
+/*
+
         <header>
 
   <div classname="p-5 text-center bg-light">
@@ -18,17 +53,7 @@ function App() {
   <div style={{backgroundImage: `url(${background})`,height:'100'}}>
   
 </div>
-<Container>
-  <Row>
-    <Col>1 of 2</Col>
-    <Col>2 of 2</Col>
-  </Row>
-  <Row>
-    <Col>1 of 3</Col>
-    <Col>2 of 3</Col>
-    <Col>3 of 3</Col>
-  </Row>
-</Container>
+
 
 <ul>
   <li><a classname="active" href="#home">Home</a></li>
@@ -38,14 +63,6 @@ function App() {
 
   
 </header>
-    </div>
-  );
-}
 
-export default App;
-/*
-<header>
-
-</header>
 
 */
