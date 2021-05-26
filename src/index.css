@@ -26,25 +26,16 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  /*background-color: #333;*/
 }
 
-li {
-  float: left;
-  width: 33%;
-}
+
 
 li a {
-  display: block;
-  color: white;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
 }
 
-li a:hover {
-  background-color: #111;
-}
 
 nav{
 
@@ -54,3 +45,63 @@ nav{
 /*
 self created classes below
 */
+.App{
+  background-color: lightgrey;
+}
+.Header-base{
+  text-align: center;
+
+}
+.header-link{
+  color: red;
+  text-decoration: none;
+}
+
+.header-link:hover{
+color: rgb(104, 3, 3);
+cursor: pointer;
+}
+.index-links
+
+
+.disabled-link{
+  color: rgb(71, 71, 71);
+  text-decoration: none;
+}
+.disabled-link:hover{
+  color: rgb(71, 71, 71);
+  cursor: default;
+}
+.home{
+  margin-top: 10%;
+  padding-top: 4%;
+}
+.resume{
+  margin-top: 3%;
+  background-color: rgb(234, 234, 234);
+}
+.Resume-ul{
+  list-style-type: circle;
+}
+
+.footer-main{
+  margin-top: 5%;
+  background-color: #333;
+  text-align: center;
+}
+.footer-base{
+  background-color: #333;
+  
+}
+.Textalign{
+  text-align: center;
+}
+.footer-color{
+  color: lightgrey;
+}
+.footer-link{
+  color: lightgrey;
+}
+.footer-link:hover{
+cursor: pointer;
+}

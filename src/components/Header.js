@@ -17,26 +17,25 @@ const headingStyle = {
     color:'red',
     backgroundColor: 'black'
 }*/
-const Header = () => {
+const Header = (props) => {
     return (
-        <div style={{backgroundColor: 'darkgray'}}>
+        <div style={{color:'rgb(255, 157, 157)',backgroundColor: 'rgb(49, 49, 49)',}}>
           <Jumbotron style={{height:'25%'}}>
-  <h1>Hello, world!</h1>
-  <p>
-    This is a simple hero unit, a simple jumbotron-style component for calling
-    extra attention to featured content or information.
+  <h1 className="Header-base">{props.header}</h1>
+  <p className="Header-base">
+{props.section}
   </p>
 
 </Jumbotron>
             <Nav>
   <Nav.Item>
-    <Nav.Link to="/" style={{color:'red'}}> Home</Nav.Link>
+    <Nav.Link  style={{color:'red'}}><Link className='header-link' to='/'>Home</Link>  </Nav.Link>
   </Nav.Item>
   <Nav.Item>
-    <Nav.Link href="./About" style={{color:'red'}}>About me</Nav.Link>
+    <Nav.Link style={{color:'red'}}><Link className='header-link' to='/About'>About me</Link></Nav.Link>
   </Nav.Item>
   <Nav.Item>
-    <Nav.Link to="/resume" style={{color:'red'}}>Resume</Nav.Link>
+    <Nav.Link  style={{color:'red'}}><Link className='header-link' to='/Resume'>Resume</Link></Nav.Link>
   </Nav.Item>
 
 </Nav>

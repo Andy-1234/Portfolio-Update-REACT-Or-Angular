@@ -7,6 +7,8 @@ import Header from "./components/Header"
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import Footer from './components/Footer'
+import Resume from './components/Resume'
 
 //just resources for self
 
@@ -18,16 +20,18 @@ function App() {
   return (
     <Router>
     <div className="App">
-      <Route path='/' exact render={(prop)=> (
+
+      
+      <Route path='/' exact render={()=> (
         <>
-                <Header></Header>
                 <Home/>
 
         </>
       )} />
       <Route path='/About' component={About} />        
+      <Route path='/Resume' component={Resume} />        
 
-
+    <Footer/>
     </div>
     </Router>
   );

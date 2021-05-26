@@ -10,13 +10,13 @@ import Aboutimg from './images/About-home.jpg'
 import Resumeimg from './images/resume.png'
 import Projectsimg from './images/Projects.jpg'
 import Skillsimg from './images/skills.jpg'
-
+import Header from './Header'
 //const thing = require("./images/header.jpg")
 const Home = () => {
     return (
         <>
-            
-<Container style={{textAlign:'center',marginTop:'5px'}}>
+            <Header header='Andy De Leon' section="Homepage" />
+<Container className='home' style={{textAlign:'center',marginTop:'5px',backgroundColor:'lightgray'}}>
 <Row>
     <Col>        
         <a href='./About'>
@@ -36,15 +36,15 @@ const Home = () => {
     
 <Link href='./About' ></Link>    
     <Col> 
-        <a href='./About'>
-        <Image src={Skillsimg} rounded fluid/>
-        <p>Past Projects</p>        
+        <a style={{color:'rgb(71, 71, 71)',textDecoration:'none'}} className='disabled-link' href='./About'>
+        <Image src={Projectsimg} rounded fluid/>
+        <p >Past Projects</p>        
         </a>
     </Col>
     <Col> 
-    <a href='./About'>
-        <Image src={Projectsimg} rounded fluid/>
-        <p>About me</p>
+    <a style={{color:'rgb(71, 71, 71)',textDecoration:'none'}} className='disabled-link' href='./About'>
+        <Image src={Skillsimg} rounded fluid/>
+        <p>My skills</p>
         </a>
     </Col>
   </Row>
